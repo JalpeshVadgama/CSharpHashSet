@@ -6,15 +6,18 @@ namespace CSharpHashSet
     class Program
     {
         static void Main(string[] args)
-        { 
-            HashSet<string> nameHashSet=
+        {
+            HashSet<string> nameHashSet =
                 new HashSet<string>
                 {
-                    "Jalpesh", "Vishal", "Tushar", "Jalpesh"
+                    "Jalpesh",
+                    "Vishal",
+                    "Tushar",
+                    "Jalpesh",
+                    "Chirag"
                 };
 
 
-            nameHashSet.Add("Chirag");
             nameHashSet.Remove("Tushar");
 
             foreach (var item in nameHashSet)
